@@ -19,7 +19,7 @@ RUN ./autogen.sh \
     && make \
     && make check \
     && make install
-
+  
 FROM debian:buster-slim
 LABEL maintainer="ZeroMQ Project <zeromq@imatix.com>"
 ARG DEBIAN_FRONTEND=noninteractive
